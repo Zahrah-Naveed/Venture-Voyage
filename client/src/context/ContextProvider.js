@@ -2,7 +2,8 @@ import { createContext, useContext, useReducer } from "react"
 import reducer from "./reducer"
 
 const initialState = {
-    currentUser : null
+    currentUser : null,
+    details:{title:'', description:'',price:0},
 }
 
 const Context = createContext(initialState)
