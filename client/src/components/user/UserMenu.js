@@ -1,12 +1,15 @@
-import {useValue} from '../context/ContextProvider';
-import { Logout, Settings } from '@mui/icons-material'
-import {ListItemIcon, Menu, MenuItem} from '@mui/material'
-import React from 'react'
+import {useValue} from '../../context/ContextProvider';
+import { Logout, Settings } from '@mui/icons-material';
+import {ListItemIcon, Menu, MenuItem} from '@mui/material';
+import React from 'react';
+
+
 const UserMenu = ({anchorUserMenu, setAnchorUserMenu}) => {
     const{dispatch} = useValue()
     const handleCloseUserMenu = ()=>{
         setAnchorUserMenu(null)
     }
+
     return (
         <Menu
         anchorEl={anchorUserMenu}
@@ -27,7 +30,7 @@ const UserMenu = ({anchorUserMenu, setAnchorUserMenu}) => {
             Logout
             </MenuItem>
         </Menu>
-    )
-}
+    );
+};
 
 export default UserMenu;
