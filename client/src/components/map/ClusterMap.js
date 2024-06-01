@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useValue } from '../../context/ContextProvider';
-import { getRooms } from '../../actions/room';
+import { getRooms } from '../../action/room';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import Supercluster from 'supercluster';
 import './cluster.css';
 import { Avatar, Paper, Tooltip } from '@mui/material';
-import GeocoderInput from '../sidebar/GeocoderInput';
+//import GeocoderInput from '../sidebar/GeocoderInput';
 import PopupRoom from './PopupRoom';
 
 const supercluster = new Supercluster({

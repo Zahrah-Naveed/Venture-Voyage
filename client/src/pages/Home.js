@@ -3,7 +3,7 @@ import BottomNav from '../components/BottomNav';
 import Loading from '../components/Loading';
 import NavBar from '../components/NavBar';
 import Notification from '../components/Notification';
-import Room from '../components/rooms/Room';
+import Rooms from '../components/rooms/Rooms';
 import Login from '../components/user/Login';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
             <Login />
             <NavBar />
             <BottomNav />
-            <Room />
+            <Rooms />
         </>
     );
 };

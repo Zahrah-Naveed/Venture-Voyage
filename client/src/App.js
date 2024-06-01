@@ -3,7 +3,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Home from './pages/Home';
 import Loading from './components/Loading';
 import Notification from './components/Notification';
-import Room from './components/rooms/Room';
+import Rooms from './components/rooms/Rooms';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
-      <Room />
+      <Rooms />
     </>
   );
 };

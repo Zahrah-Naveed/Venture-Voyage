@@ -7,7 +7,7 @@ import ReactMapGL, {
 import { useValue } from '../../../context/ContextProvider';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { useEffect, useRef } from 'react';
-import Geocoder from './Geocoder';
+import Geocoder from './GeoCoder';
 
 const AddLocation = () => {
   const {
