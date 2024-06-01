@@ -4,8 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Lazy } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/lazy';
+//import 'swiper/css/lazy';
 import { useValue } from '../../context/ContextProvider';
+import 'swiper/swiper-bundle.css';
+SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 const PopupRoom = ({ popupInfo }) => {
   const { title, description, price, images } = popupInfo;
