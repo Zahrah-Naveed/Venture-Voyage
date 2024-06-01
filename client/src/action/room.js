@@ -1,4 +1,4 @@
-import deleteImages from './utils/deleteImages';
+//import deleteImages from './utils/deleteImages';
 import fetchData from './utils/fetchData';
 
 const url = process.env.REACT_APP_SERVER_URL + '/room';

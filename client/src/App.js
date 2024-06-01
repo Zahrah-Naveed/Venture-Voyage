@@ -1,16 +1,22 @@
-import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/dashboard/Dashboard';
+import Home from './pages/Home';
 import Loading from './components/Loading';
-import NavBar from './components/NavBar';
 import Notification from './components/Notification';
-import Login from './components/user/Login';
+import Rooms from './components/rooms/Rooms';
 
 const App = () => {
   return (
     <>
       <Loading />
       <Notification />
-      <Login />
-      <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+      <Rooms />
     </>
   );
 };
