@@ -20,6 +20,11 @@ const reducer = (state, action) => {
       localStorage.setItem('currentUser', JSON.stringify(action.payload));
       return { ...state, currentUser: action.payload };
 
+      case 'DELETE_ROOM':
+      return {
+        ...state,
+        rooms: state.rooms.filter((room) => room._id !== action.payload),
+      };
     default:
       throw new Error('No matched action!');
   }
